@@ -19,3 +19,27 @@ body,
   color: blueviolet;
   font-weight: bold;
 }
+
+#locate {
+  cursor: pointer;
+  position: absolute;
+  top: 80px;
+  z-index: 999;
+  width: 30px;
+  height: 30px;
+  background-color: cyan;
+  margin: 0 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  line-height: 30px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#locate:hover {
+  background-color: #f4f4f4;
+}

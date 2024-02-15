@@ -8,6 +8,10 @@ L.tileLayer(
   }
 ).addTo(map);
 
+const locate = () => {
+  map.locate({ setView: true, maxZoom: 18 });
+};
+
 const loadData = async () => {
   let response = await fetch("old_addresses.min.geojson");
   let data = await response.json();
